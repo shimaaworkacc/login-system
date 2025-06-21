@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Login</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="text-center primary-bg">
+  <section id="loginSection" class="container card mt-5 p-5 col-8 primary-bg d-block">
+    <h1 class="my-3">Smart Login System</h1>
+    <form id="signupForm" onsubmit="event.preventDefault();">
+      <div class="mb-3 text-start">
+        <input type="email" name="email" class="form-control primary-bg" id="LoginEmail" placeholder="Enter your email"
+          required>
+        <p class="text-danger d-none">Please enter a valid email address</p>
+      </div>
+      <div class="mb-3 text-start">
+        <input name="password" type="password" class="form-control primary-bg" id="LoginPassword"
+          placeholder="Enter your password" required>
+        <p class="text-danger d-none">Please enter a password</p>
+      </div>
+      <p class="text-danger d-none" id="loginError">All inputs are required</p>
+      <button type="button" class="btn w-100 primary-bg" id="loginBtn">Login</button>
+      <p class="my-2">Don't have an account? <a href="#" onclick="window.open('signup.html', '_self')">SignUp</a></p>
+    </form>
+  </section>
+  <section id="home" class="d-none">
+    <button type="button" class="btn w-100 primary-bg" id="logout"
+      onclick="window.open('index.html', '_self')">Logout</button>
+    <h1></h1>
+
+  </section>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
